@@ -4,7 +4,7 @@
 #define message_length 140
 
 int main(void){
-    char user_message[150]; // allows slightly more than 140 
+    char user_message[150]; // allows more than 140 
 
     scanf("%149[^\n]", user_message); // read users input , as well avoid overflow
 
