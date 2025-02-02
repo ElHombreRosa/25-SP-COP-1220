@@ -14,14 +14,15 @@ const char* hurricane_category(double wind_speed){
     } else {
         return "Not a Hurricane";
     }
-}
+}  // if else for different categories of hurricane
 
 int main(void){
     double wind_speed;
 
-    scanf("%lf", &wind_speed);
+    scanf("%lf", &wind_speed); // input from user of hurricane mph
 
     printf("%s\n", hurricane_category(wind_speed));
+    // input hurricane mph into hurricane_category, print result
 
     return 0; 
 }
