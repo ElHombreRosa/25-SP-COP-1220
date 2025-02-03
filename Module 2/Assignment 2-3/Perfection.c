@@ -12,9 +12,9 @@ int main(){
     }
 
     if (sum == num)
-        printf("%d Perfect Number\n", num);
+        printf("Perfect Number\n");
     else
-        printf("%d Not A Perfect Number\n", num);
-
+        printf("Not A Perfect Number\n");
+        
     return 0;
 }
