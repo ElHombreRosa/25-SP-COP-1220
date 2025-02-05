@@ -36,14 +36,21 @@ int main(){
         }
     }
 
-    printf("Each Person's Total Sales:\n");
+    printf("\nEach Person's Total Sales:\n");
     printf("D: $%d\n", sales_D);
     printf("E: $%d\n", sales_E);
     printf("F: $%d\n", sales_F);
 
     int grand_total = sales_D + sales_E + sales_F;
-    printf("Grand Total: $%d\n", grand_total);
+    printf("\nGrand Total: $%d\n", grand_total);
 
+    int highest_sales = (sales_D > sales_E) ? ((sales_D > sales_F) ? sales_D : sales_F) : ((sales_E > sales_F) ? sales_E : sales_F);
+    printf("Highest Sale: ");
+    if (sales_D == highest_sales) printf("Danielle ");
+    if (sales_E == highest_sales) printf("Edward ");
+    if (sales_F == highest_sales) printf("Francis ");
+    printf("\n");
+     
 
     return 0; 
 }
