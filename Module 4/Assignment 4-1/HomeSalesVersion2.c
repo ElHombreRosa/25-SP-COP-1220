@@ -4,7 +4,7 @@
 #define NUM_EMPLOYEE 3
 
 int main(){
-    double sales_amounts_array[] = {0};
+    double sales_amounts_array[NUM_EMPLOYEE] = {0};
     char salespersons_array[NUM_EMPLOYEE]  = {'D', 'E', 'F'};
 
     char salesperson;
