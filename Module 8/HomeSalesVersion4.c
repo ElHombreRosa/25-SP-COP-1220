@@ -32,7 +32,7 @@ void write_sales_data(SalesPerson salespeople[], int num_salespeople) {
         printf("Error: Could not open file %s\n", filename);
         return;
     }
-    for (int i = 0; i < num_salespeople; i++) { // Update the data for each salesperson 
+    for (int i = 0; i < num_salespeople; i++) { //Update the data for each salesperson 
         fprintf(file,"%c %s %.2lf\n", salespeople[i].initial, salespeople[i].name, salespeople[i].sales);
     }
     fclose(file);
