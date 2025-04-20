@@ -5,7 +5,6 @@ void CaesarCipher (char text[], int shift) {
     int i = 0;
     char ch;
 
-
     while (text[i] != '\0') {
         ch = text[i];
 
